@@ -34,7 +34,7 @@
     <g:select id="country" name="country.id" from="${com.dynamic.Country.list()}" optionKey="id" required=""
               noSelection="['':'Select a Country']"
               onchange="${remoteFunction (
-                      controller: 'State',
+                      controller: 'state',
                       action: 'getStates',
                       params: '\'id=\' + this.value',
                       update: 'stateDiv'
