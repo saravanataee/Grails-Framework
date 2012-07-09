@@ -5,12 +5,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Sample title</title>
-  </head>
-  <body>
+
     <div class="fieldcontain ${hasErrors(bean: personInstance, field: 'state', 'error')} required">
     <label for="state">
         <g:message code="person.state.label" default="State"/>
@@ -23,6 +18,3 @@
     <g:else>
        No Existing Records Found  
     </g:else>
-</div>
-  </body>
-</html>
